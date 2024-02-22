@@ -12,7 +12,7 @@ def encode_tables_csv(tables_path: str):
     return (data['word'].tolist())
     
 def get_word_embedding(word: str): 
-    glove_file = './data/glove.6B.100d.txt'  
+    glove_file = './glove.6B.100d.txt'  
     word2vec_output_file = './glove.6B.100d.word2vec'
     data = encode_tables_csv("./data/PolSentiLex-raw.csv") 
     
